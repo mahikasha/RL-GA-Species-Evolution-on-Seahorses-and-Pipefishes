@@ -59,16 +59,16 @@ evolutionary-adaptation/
 
 ### 🤖 Reinforcement Learning (RL)
 
-- **Goal**: Predict **Sex**, **Preservation**, and **Location** from **Brain Weight** and **Body Length**.
+- **Goal**: Predict **Sex**, **Species**, and **Location** from **Brain Weight** and **Body Length**.
 - **Environment**: `EvolutionEnv` with encoded states and actions
-- **Q-Learning Setup**:
-  - States: Binned or normalized combinations of input traits
-  - Actions: Predicted classes for each attribute
-  - Rewards: +1 for correct prediction, 0 otherwise
+- **Multi-Head DQN (Deep Q-Network) Setup**:
+  - States: Normalized combinations of input traits , i.e Brain Weight and Body Length.
+  - Actions: Predicted classes, i.e Sex,Species and location for each attribute
+  - Rewards: Weighted by class frequency for species, ±0.5 or 1.0 for location and ±0.25 or 0.5 for sex
   - Policy: ε-greedy with decay
-  - Output: Separate Q-Tables or a multi-task Q-Learning framework
+  - Output: A multi-task Q-Learning framework
 
-- **Outcome**: Trained agent that can infer the biological classification based on physical measurements.
+- **Outcome**: Trained agent that can infer the biological classification based on physical measurements with visual representing/ highlighting in Google maps.
 
 ---
 
@@ -86,6 +86,6 @@ evolutionary-adaptation/
 
 ## 📈 Visualizations
 
-- GA: Trait convergence over generations, fitness trends
-- RL: Episode-wise reward plots, prediction accuracy, confusion matrices
+- GA: Trait convergence over generations, fitness trends.
+- RL: Episode-wise reward plots, prediction accuracy, confusion matrices.
 
