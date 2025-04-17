@@ -63,10 +63,10 @@ evolutionary-adaptation/
 - **Environment**: `EvolutionEnv` with encoded states and actions
 - **Multi-Head DQN (Deep Q-Network) Setup**:
   - States: Normalized combinations of input traits , i.e Brain Weight and Body Length.
-  - Actions: Predicted classes, i.e Sex,Species and location for each attribute
-  - Rewards: Weighted by class frequency for species, ±0.5 or 1.0 for location and ±0.25 or 0.5 for sex
-  - Policy: ε-greedy with decay
-  - Output: A multi-task Q-Learning framework
+  - Actions: Predicted classes, i.e Sex,Species and location for each attribute.
+  - Rewards: Weighted by class frequency for species, ±0.5 or 1.0 for location and ±0.25 or 0.5 for sex.
+  - Policy: ε-greedy with decay.
+  - Output: A multi-task Q-Learning framework.
 
 - **Outcome**: Trained agent that can infer the biological classification based on physical measurements with visual representing/ highlighting in Google maps.
 
