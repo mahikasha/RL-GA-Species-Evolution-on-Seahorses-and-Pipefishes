@@ -35,7 +35,7 @@ evolutionary-adaptation/
 │
 ├── EC_Project.ipynb           # GA: Evolution over 10 generations
 ├── RL_Project.ipynb           # RL: Trait-based prediction using Q-Learning
-├── data/                      # Dataset
+├── Data_Folder/               # Dataset
 └── README.md                  # This file
 ```
 
